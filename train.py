@@ -36,7 +36,7 @@ valid_loss_min = np.Inf
 train_on_gpu = torch.cuda.is_available()
 
 # 若電腦支援 GPU 運算，所要使用的 GPU
-cuda_device = torch.device('cuda')
+cuda_device = torch.device('cuda:1')
 
 # 1. 讀取圖片
 print("1. 讀取圖片")
